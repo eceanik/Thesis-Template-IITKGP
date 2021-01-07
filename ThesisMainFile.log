@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.6)  7 JAN 2021 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.6)  7 JAN 2021 13:06
 entering extended mode
-**./ThesisTemplateIITKGP.tex
-(ThesisTemplateIITKGP.tex
+**./ThesisMainFile.tex
+(ThesisMainFile.tex
 LaTeX2e <2020-10-01> patch level 3
 L3 programming layer <2020-12-07> xparse <2020-03-03> (book.cls
 Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
@@ -731,14 +731,14 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count320
 \l__pdf_internal_box=\box66
-) (ThesisTemplateIITKGP.aux (HeadTail/coverpage.aux)
-(HeadTail/title.aux) (HeadTail/Approvalcert.aux) (HeadTail/cert.aux)
-(HeadTail/declaration.aux) (HeadTail/dedication.aux) (HeadTail/ack.aux)
-(HeadTail/Abstract.aux) (Symbol/abbreviation.aux) (Symbol/listofsymbol.aux)
+) (ThesisMainFile.aux (HeadTail/coverpage.aux) (HeadTail/title.aux) (HeadTail/A
+pprovalcert.aux) (HeadTail/cert.aux) (HeadTail/declaration.aux)
+(HeadTail/dedication.aux) (HeadTail/ack.aux) (HeadTail/Abstract.aux)
+(Symbol/abbreviation.aux) (Symbol/listofsymbol.aux)
 (Chapter_intro/chapterHead.aux) (Chapter_Conclusions/chapterHead.aux)
 (Appendix/ExptSetup.aux) (Appendix/Jacobian.aux) (HeadTail/publication.aux)
 (HeadTail/biodata.aux))
-\openout1 = `ThesisTemplateIITKGP.aux'.
+\openout1 = `ThesisMainFile.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
@@ -827,18 +827,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
 LaTeX Info: Redefining \nameref on input line 84.
- (ThesisTemplateIITKGP.out) (ThesisTemplateIITKGP.out)
+ (ThesisMainFile.out) (ThesisMainFile.out)
 \@outlinefile=\write5
-\openout5 = `ThesisTemplateIITKGP.out'.
+\openout5 = `ThesisMainFile.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-(till_intro.tex
+ (till_intro.tex
 \openout2 = `HeadTail/coverpage.aux'.
 
- (HeadTail/coverpage.tex
+
+(HeadTail/coverpage.tex
 LaTeX Font Info:    Font shape `T1/aer/b/it' in size <17.28> not available
 (Font)              Font shape `T1/aer/bx/it' tried instead on input line 18.
 ) [1
@@ -1039,9 +1039,9 @@ LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 
 
 ]
-(ThesisTemplateIITKGP.toc [15])
+(ThesisMainFile.toc [15])
 \tf@toc=\write6
-\openout6 = `ThesisTemplateIITKGP.toc'.
+\openout6 = `ThesisMainFile.toc'.
 
 
 
@@ -1050,25 +1050,25 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] (ThesisTemplateIITKGP.lof)
+[16] (ThesisMainFile.lof)
 \tf@lof=\write7
-\openout7 = `ThesisTemplateIITKGP.lof'.
+\openout7 = `ThesisMainFile.lof'.
 
  [17
 
 ] [18
 
-] (ThesisTemplateIITKGP.lot)
+] (ThesisMainFile.lot)
 \tf@lot=\write8
-\openout8 = `ThesisTemplateIITKGP.lot'.
+\openout8 = `ThesisMainFile.lot'.
 
- [19]
-[20
+ [19] [20
 
 ]
 \openout2 = `Symbol/abbreviation.aux'.
 
- (Symbol/abbreviation.tex) [21
+
+(Symbol/abbreviation.tex) [21
 
 
 ] [22
@@ -1083,8 +1083,7 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
 
 
 
-]
-[24
+] [24
 
 
 
@@ -1092,7 +1091,8 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
 ])
 \openout2 = `Chapter_intro/chapterHead.aux'.
 
- (Chapter_intro/chapterHead.tex
+
+(Chapter_intro/chapterHead.tex
 {\tt {\large {\bf C H A P T E R\ \ }}} 1.
 LaTeX Font Info:    Trying to load font information for T1+aett on input line 1
 .
@@ -1156,7 +1156,7 @@ A P P E N D I X B.
 
 
 
-] (ThesisTemplateIITKGP.bbl) [13
+] (ThesisMainFile.bbl) [13
 
 
 ] [14
@@ -1164,11 +1164,11 @@ A P P E N D I X B.
 ]
 \openout2 = `HeadTail/publication.aux'.
 
- (HeadTail/publication.tex)
-[15
+ (HeadTail/publication.tex) [15
 
 
-] [16
+]
+[16
 
 
 
@@ -1182,7 +1182,7 @@ A P P E N D I X B.
 
 
 
-] (ThesisTemplateIITKGP.aux
+] (ThesisMainFile.aux
 (HeadTail/coverpage.aux) (HeadTail/title.aux) (HeadTail/Approvalcert.aux)
 (HeadTail/cert.aux) (HeadTail/declaration.aux) (HeadTail/dedication.aux)
 (HeadTail/ack.aux) (HeadTail/Abstract.aux) (Symbol/abbreviation.aux)
@@ -1196,17 +1196,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `ThesisTemplateIITKGP.out' has not changed.
+Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
 (rerunfilecheck)             Checksum: 9796A69A5CD4B82FE33D11ED12D0A0E5;1659.
  ) 
 Here is how much of TeX's memory you used:
  12522 strings out of 479624
- 191947 string characters out of 2863687
- 510473 words of memory out of 3000000
+ 196901 string characters out of 2863687
+ 510443 words of memory out of 3000000
  29117 multiletter control sequences out of 15000+200000
  452113 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,12n,127p,838b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 82i,12n,127p,832b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/calligra/dpi1
 433\callig15.pk> <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public
 /calligra/dpi1037\callig15.pk> <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk
@@ -1225,7 +1225,7 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Users/Anik/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb><C:/Users/Anik/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti12.pfb>
-Output written on ThesisTemplateIITKGP.pdf (44 pages, 480813 bytes).
+Output written on ThesisMainFile.pdf (44 pages, 480813 bytes).
 PDF statistics:
  476 PDF objects out of 1000 (max. 8388607)
  95 named destinations out of 1000 (max. 500000)

@@ -1,1 +1,1 @@
-del ThesisTemplateIITKGP.aux ThesisTemplateIITKGP.bbl ThesisTemplateIITKGP.blg ThesisTemplateIITKGP.lof ThesisTemplateIITKGP.log ThesisTemplateIITKGP.lot ThesisTemplateIITKGP.synctex.gz ThesisTemplateIITKGP.toc ThesisTemplateIITKGP.out ThesisTemplateIITKGP.bcf ThesisTemplateIITKGP.run.xml
+del ThesisMainFile.aux ThesisMainFile.bbl ThesisMainFile.blg ThesisMainFile.lof ThesisMainFile.log ThesisMainFile.lot ThesisMainFile.synctex.gz ThesisMainFile.toc ThesisMainFile.out ThesisMainFile.bcf ThesisMainFile.run.xml

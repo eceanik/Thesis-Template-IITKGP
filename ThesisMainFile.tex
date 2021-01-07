@@ -3,8 +3,6 @@
 %-----------------------------------------------------------
 %------------------------ packages -------------------------
 %-----------------------------------------------------------
-%\usepackage{caption2}
-%\usepackage{tabu}  % added for long table
 \usepackage{thesis}
 \usepackage{comment}
 \usepackage[hidelinks]{hyperref}
@@ -28,22 +26,23 @@
 \usepackage{afterpage}
 \usepackage{pdflscape}
 \usepackage{epstopdf}
-
-%\usepackage[cmex10]{amsmath}
 \usepackage{amsmath}
-%\usepackage{isomath}
 \usepackage{cuted}
 \usepackage{ae,aecompl}
-%\usepackage[T1]{fontenc} % Was producing low-res fonts
-%\usepackage{lmodern}
 \usepackage{upgreek,bm}
-
 \usepackage{amssymb}
 \usepackage{array}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-
 \usepackage{calligra}  %% used for fancy first letter
+
+%-----------------------------------------------------------
+%---------------------- User Inputs ------------------------
+%-----------------------------------------------------------
+\newcommand{\thesisTitle}{Thesis Title}  % Input Thesis title
+\newcommand{\authorName}{Author Name}  % Input Author name
+\newcommand{\authorDept}{Department of <Department Name>}  % Input Department of Author
+%-----------------------------------------------------------
 
 \newcolumntype{L}{>{\centering\arraybackslash}m{11cm}}
 \newcolumntype{K}{>{\centering\arraybackslash}m{3cm}}
@@ -75,9 +74,6 @@
 
 \DeclareMathOperator{\diag}{diag}
 
-\newcommand{\thesisTitle}{Thesis Title}  % Input Thesis title
-\newcommand{\authorName}{Author Name}  % Input Author name
-\newcommand{\authorDept}{Department of <Department Name>}  % Input Department of Author
 %-------------------------------------------------------------
 %---------------------------- start --------------------------
 %-------------------------------------------------------------

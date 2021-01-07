@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.6)  7 JAN 2021 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2021.1.6)  7 JAN 2021 14:47
 entering extended mode
 **./ThesisMainFile.tex
 (ThesisMainFile.tex
@@ -709,19 +709,19 @@ ligra.sty"
 Package: calligra 2012/04/10 v1.9 LaTeX package calligra
 )
 
-Package array Warning: Column X is already defined on input line 50.
+Package array Warning: Column X is already defined on input line 49.
 
 
-Package array Warning: Column Y is already defined on input line 51.
+Package array Warning: Column Y is already defined on input line 50.
 
 
-Package array Warning: Column W is already defined on input line 52.
+Package array Warning: Column W is already defined on input line 51.
 
 \c@thm=\count316
 \c@rem=\count317
 \c@prf=\count318
 \c@lem=\count319
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 84
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 80
 .
 ("C:\Users\Anik\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
@@ -740,22 +740,22 @@ pprovalcert.aux) (HeadTail/cert.aux) (HeadTail/declaration.aux)
 (HeadTail/biodata.aux))
 \openout1 = `ThesisMainFile.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -808,7 +808,7 @@ f.mkii"
 \makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks33
 )
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 80.
 
 ("C:\Users\Anik\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y"
@@ -824,9 +824,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count327
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
  (ThesisMainFile.out) (ThesisMainFile.out)
 \@outlinefile=\write5
 \openout5 = `ThesisMainFile.out'.
@@ -1202,11 +1202,11 @@ Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
 Here is how much of TeX's memory you used:
  12522 strings out of 479624
  196901 string characters out of 2863687
- 510443 words of memory out of 3000000
+ 510444 words of memory out of 3000000
  29117 multiletter control sequences out of 15000+200000
  452113 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,12n,127p,832b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 82i,12n,127p,604b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/calligra/dpi1
 433\callig15.pk> <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public
 /calligra/dpi1037\callig15.pk> <C:\Users\Anik\AppData\Local\MiKTeX\2.9\fonts/pk
@@ -1225,9 +1225,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Users/Anik/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb><C:/Users/Anik/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti12.pfb>
-Output written on ThesisMainFile.pdf (44 pages, 480813 bytes).
+Output written on ThesisMainFile.pdf (44 pages, 479409 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
+ 475 PDF objects out of 1000 (max. 8388607)
  95 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

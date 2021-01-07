@@ -1,0 +1,156 @@
+%\documentclass{book}
+\documentclass[12pt, a4paper, twoside, openright, titlepage]{book}
+%-----------------------------------------------------------
+%------------------------ packages -------------------------
+%-----------------------------------------------------------
+%\usepackage{caption2}
+%\usepackage{tabu}  % added for long table
+\usepackage{thesis}
+\usepackage{comment}
+\usepackage[hidelinks]{hyperref}
+\usepackage{epsfig}
+\usepackage[toc,page]{appendix}
+\usepackage{algcompatible}
+\usepackage{float}
+\usepackage{color}
+\usepackage{url}
+\raggedbottom
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{ctable}
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage{longtable}
+\usepackage{tocloft}
+\usepackage{subfig}
+\usepackage{epstopdf}
+\usepackage{afterpage}
+\usepackage{pdflscape}
+\usepackage{epstopdf}
+
+%\usepackage[cmex10]{amsmath}
+\usepackage{amsmath}
+%\usepackage{isomath}
+\usepackage{cuted}
+\usepackage{ae,aecompl}
+%\usepackage[T1]{fontenc} % Was producing low-res fonts
+%\usepackage{lmodern}
+\usepackage{upgreek,bm}
+
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{calligra}  %% used for fancy first letter
+
+\newcolumntype{L}{>{\centering\arraybackslash}m{11cm}}
+\newcolumntype{K}{>{\centering\arraybackslash}m{3cm}}
+\newcolumntype{X}{>{\centering\arraybackslash}m{7cm}}
+\newcolumntype{Y}{>{\centering\arraybackslash}m{4cm}}
+\newcolumntype{W}{>{\centering\arraybackslash}m{6cm}}
+\newcolumntype{M}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%-----------------------------------------------------------
+%----------------------------- style -----------------------
+%-----------------------------------------------------------
+\pagestyle{fancy} \lhead{} \rhead{}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+%\fancyfoot[RO,LE]{\thepage}
+%\fancyhf{}			% Removes any previous fancyheader setting
+%\oddsidemargin 0.5in \evensidemargin 0.2in
+\oddsidemargin 0.5in \evensidemargin 0.0in
+%\oddsidemargin 0.0in \evensidemargin 0.0in
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{rem}{Remark}
+\newtheorem{prf}{Proof}
+\newtheorem{lem}{Lemma}
+
+\DeclareMathOperator{\diag}{diag}
+
+\newcommand{\thesisTitle}{Thesis Title}  % Input Thesis title
+\newcommand{\authorName}{Author Name}  % Input Author name
+\newcommand{\authorDept}{Department of <Department Name>}  % Input Department of Author
+%-------------------------------------------------------------
+%---------------------------- start --------------------------
+%-------------------------------------------------------------
+\begin{document}
+%\pagenumbering{none}
+    \setcounter{page}{1}
+    \pagenumbering{roman}
+    \input{till_intro}
+%-------------------------------------------------------------
+%------------------------ page start -------------------------
+%-------------------------------------------------------------
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+%--------------------------------------------------------------
+%----------------------- Chapters -----------------------------
+%--------------------------------------------------------------
+\begin{spacing}{1.5}
+	\include{Chapter_intro/chapterHead}
+	\include{Chapter_Conclusions/chapterHead}
+\end{spacing}
+
+%---------------------------------------------------------------
+%----------------------- Appendix ------------------------------
+%---------------------------------------------------------------
+%\begin{comment}
+%\renewcommand{\chaptername}{Appendix} %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appendices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% APPENDIX %%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\thesection}{A.\arabic{section}}
+\include{Appendix/ExptSetup}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\cleardoublepage
+\include{Appendix/Jacobian}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%\cleardoublepage
+\end{appendices}
+\renewcommand{\chaptername}{Chapter} %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \cleardoublepage
+    \lhead{} \rhead{}
+%\end{comment}
+%---------------------------------------------------------------
+%----------------------- references ----------------------------
+%---------------------------------------------------------------
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography} %Supress Reference subsection
+\chapter*{Bibliography}
+\renewcommand{\section}[2]{}% to remove the references heading
+\bibliographystyle{IEEEtran}
+\renewcommand{\chaptername}{}
+\bibliography{RefFile1, RefFile2}
+\cleardoublepage
+%----------------------------------------------------------------
+%---------------------- publication -----------------------------
+%----------------------------------------------------------------
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}} %Reinstate level-2 TOC
+\phantomsection
+\addcontentsline{toc}{chapter}{Publications}
+\include{HeadTail/publication}
+\cleardoublepage
+%----------------------------------------------------------------
+%---------------------- biodata ---------------------------------
+%----------------------------------------------------------------
+\begin{spacing}{1.25}
+\phantomsection
+\addcontentsline{toc}{chapter}{Author Biography}
+\include{HeadTail/biodata}
+\cleardoublepage
+\end{spacing}
+%----------------------------------------------------------------
+%-------------------------- END ---------------------------------
+%----------------------------------------------------------------
+%================================================================
+%======================= Finish =================================
+%================================================================
+\end{document}

@@ -1,0 +1,23 @@
+%\pagestyle{empty} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{plain}
+\begin{center}
+\vspace*{1cm} \begin{spacing} {1.25}
+
+{\LARGE \bf Detection of Weak faults in Squirrel Cage Induction
+Motors using Frequency Estimation Techniques \\}
+
+\end{spacing}
+\end{center}
+
+
+
+%\vspace{12cm}
+\vspace{12cm}
+\begin{flushright}
+%\begin{Large}
+\begin{Large}
+{\bf {\em  Arunava Naha ~~}\noindent \vskip -.8\baselineskip
+\noindent \rule[-2.5 mm]{\textwidth}{3 pt}\\}
+\end{Large}
+%\end{huge}
+\end{flushright}

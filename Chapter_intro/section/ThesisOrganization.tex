@@ -1,0 +1,14 @@
+\section{Organization of the Thesis}
+The thesis is organized as follows:
+\begin{description}
+	\item [Chapter~\ref{chap:intro}:] This chapter provides the background, motivation, and objective of this thesis to detect and estimate low-amplitude frequency components and their utility in diagnosing SCIM faults. The experimental setup is also described in this chapter. 
+	\item [Chapter~\ref{chap:ekf}:] Proposes a generalized framework for real-time tracking of multiple time-varying sinusoidal frequencies of a non-stationary signal. 
+	\item [Chapter~\ref{chap:rayleighQuotientSpectrum}:] Introduces the Rayleigh-quotient-based spectral estimator and uses it for detecting partially broken rotor bar faults using stator current. This chapter uses an EKF-based method for eliminating the single dominant supply frequency component from the stator current. However, the necessity of eliminating multiple dominant components from vibration signals to detect different faults takes us to the next chapter.  
+	\item [Chapter~\ref{chap:vibFaultDetect}:] This chapter has modified the IF-estimator of Chapter~\ref{chap:ekf} to eliminate multiple dominant components from an input signal. A minimum distance-based detector is proposed for generalized fault detection. Using the Rayleigh-quotient-based spectral estimator, we show the overall framework's utility for detecting multiple SCIM faults using vibration signatures. 
+	\item [Chapter~\ref{chap:bayesIoT}:] Proposed a Bayesian MAP-based sequential spectral estimator for detecting SCIM faults using a single-phase stator current input. The method has been used for presenting an online IoT-based framework for detecting defects in multiple induction motors. 
+	\item [Chapter~\ref{chap:conclusion}:] This chapter concludes the thesis and provides a peek into future research directions. 
+\end{description}
+A pictorial representation of different parts of the thesis and the chapter dependencies are provided in Fig. \ref{fig:chapMap}. \begin{figure}[h] \centering
+	{\includegraphics[width=150mm]{Chapter_intro/figs/chapterPlan.eps}}
+	\caption{The organization of the thesis and chapter dependencies} \label{fig:chapMap}
+\end{figure}

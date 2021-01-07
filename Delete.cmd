@@ -1,0 +1,1 @@
+del ThesisTemplateIITKGP.aux ThesisTemplateIITKGP.bbl ThesisTemplateIITKGP.blg ThesisTemplateIITKGP.lof ThesisTemplateIITKGP.log ThesisTemplateIITKGP.lot ThesisTemplateIITKGP.synctex.gz ThesisTemplateIITKGP.toc ThesisTemplateIITKGP.out ThesisTemplateIITKGP.bcf ThesisTemplateIITKGP.run.xml

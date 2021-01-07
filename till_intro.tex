@@ -1,0 +1,96 @@
+%----------------------------------------------------
+%-------------------- cover page --------------------
+%----------------------------------------------------
+  \include{HeadTail/coverpage}
+  \cleardoublepage
+  \setcounter{page}{1}
+  \pagenumbering{roman}
+%-----------------------------------------------------
+%-------------------- Title --------------------------
+%-----------------------------------------------------
+   \phantomsection
+   \addcontentsline{toc}{chapter}{Title Page}
+   \include{HeadTail/title}      
+   \cleardoublepage
+   \cfoot{\thepage}
+   \begin{spacing}{1.1}
+%-----------------------------------------------------
+%-------------------- Approvalcert -------------------
+%-----------------------------------------------------
+   \phantomsection
+   \addcontentsline{toc}{chapter}{Certificate of Approval}
+    \include{HeadTail/Approvalcert}       
+    \cleardoublepage
+%------------------------------------------------------
+%-------------------- Certificate ---------------------
+%------------------------------------------------------
+   \phantomsection
+   \addcontentsline{toc}{chapter}{Certificate by the Supervisors}
+   \include{HeadTail/cert}       
+   \cleardoublepage
+%------------------------------------------------------
+%-------------------- declaration ---------------------
+%------------------------------------------------------
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Declaration}
+    \include{HeadTail/declaration}     
+    \cleardoublepage
+%------------------------------------------------------
+%--------------------- Dedication ---------------------
+%------------------------------------------------------
+    \include{HeadTail/dedication}    
+    \cleardoublepage
+%------------------------------------------------------
+%--------------------- ack ----------------------------
+%------------------------------------------------------
+ 
+ \phantomsection
+ \addcontentsline{toc}{chapter}{Acknowledgement}
+ \include{HeadTail/ack}            
+ \cleardoublepage
+%--------------------------------------------------------
+%---------------------- Abstract ------------------------
+%--------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\include{HeadTail/Abstract}   
+\cleardoublepage
+%--------------------------------------------------------
+%---------------------- contents ------------------------
+%--------------------------------------------------------
+%\renewcommand{\cftdot}{}  % to remove dots
+\tableofcontents
+%\tableofcontents\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{Table of Contents}
+\cleardoublepage
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{1ex}
+\setcounter{lofdepth}{1}
+   \phantomsection
+ \addcontentsline{toc}{chapter}{\listfigurename}
+ \listoffigures
+    \cleardoublepage
+    \phantomsection
+  \addcontentsline{toc}{chapter}{\listtablename}
+ \listoftables
+%-----------------------------------------------------------
+%----------------------- ABBREVIATIONS ---------------------
+%-----------------------------------------------------------
+    %%%%%%%%%%%%%%% LIST OF ABBREVIATIONS %%%%%%%%%%%%%%%%%%
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{List of Abbreviations}
+    \markboth{List of Abbreviations}{List of Abbreviations}
+    \include{Symbol/abbreviation}
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%    %%%%%%%%%%%%%%%%%% LIST OF SYMBOLS %%%%%%%%%%%%%%%%%%%%%
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{List of Symbols}
+    \markboth{List of Symbols}{List of Symbols}
+    \include{Symbol/listofsymbol}
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+%    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{spacing}

@@ -1,0 +1,102 @@
+\chapter{Derivation of Cramer Rao Bound}{Derivation of Cramer Rao Bound}
+\renewcommand{\thesection}{C.\arabic{section}}
+\label{Appendix:CRB}
+The real signal model is given by
+\begin{equation}
+	\label{model} x[n] = A\cos \left( {\frac{{2\pi f}}{{{F_s}}}n +
+		\phi } \right) + w[n]
+	%\tag{\thesection.\theequation}
+\end{equation}
+where $A$, $f$, $\phi$ are the amplitude, frequency and phase of a
+single sinusoid respectively. $F_s$ is the sampling frequency and
+$w[n]$ is the white additive gaussian noise. The probability
+density function of ${x_0},{x_1}, \ldots ,{x_{N - 1}}$ represented
+by $\bf{x}$ and parameterized by $f$ is given by
+
+\begin{align}
+	{P_{\bf{x}}}({\bf{x}};f) = \frac{1}{{{{\left( {2\pi {\sigma ^2}}
+					\right)}^{N/2}}}}\exp \left\{ { - \frac{1}{{2{\sigma
+					^2}}}{{\sum\limits_{n = 0}^{N - 1} {\left[ {x(n) - A\cos \left(
+						{\frac{{2\pi f}}{{{F_s}}}n + \phi } \right)} \right]} }^2}}
+	\right\}
+\end{align}
+
+Taking natural logarithm on both side gives
+\begin{align}
+	\ln {p_{\bf{x}}}({\bf{x}};f) =  - \frac{N}{2}\ln \left( {2\pi
+		{\sigma ^2}} \right) - \frac{1}{{2{\sigma ^2}}}{\sum\limits_{n =
+			0}^{N - 1} {\left[ {x(n) - A\cos \left( {\frac{{2\pi f}}{{{F_s}}}n
+					+ \phi } \right)} \right]} ^2}
+\end{align}
+The first derivative w.r.t to $f$ is given by
+\begin{align}
+	\frac{{\partial \ln {p_{\bf{x}}}({\bf{x}};f)}}{{\partial f}} =  -
+	\frac{{2\pi A}}{{{\sigma ^2}{F_s}}}\sum\limits_{n = 0}^{N - 1}
+	{n\left[ {x(n) - A\cos \left( {\frac{{2\pi f}}{{{F_s}}}n + \phi }
+			\right)} \right]} \sin \left( {\frac{{2\pi f}}{{{F_s}}}n + \phi }
+	\right)
+\end{align}
+
+\begin{align}
+	= - \frac{{2\pi A}}{{{\sigma ^2}{F_s}}}\sum\limits_{n = 0}^{N - 1}
+	{n\left[ {x(n)\sin \left( {\frac{{2\pi f}}{{{F_s}}}n + \phi }
+			\right) - \frac{A}{2}\sin \left( {\frac{{4\pi f}}{{{F_s}}}n +
+				2\phi } \right)} \right]}
+\end{align}
+
+The second derivative w.r.t to $f$ is given by
+\begin{align}
+	\frac{{{\partial ^2}\ln {p_{\bf{x}}}({\bf{x}};f)}}{{\partial
+			{f^2}}} =  - \frac{{2\pi A}}{{{\sigma ^2}{F_s}}}\sum\limits_{n =
+		0}^{N - 1} {n\left[ {\frac{{2\pi }}{{{F_s}}}nx(n)cos\left(
+			{\frac{{2\pi f}}{{{F_s}}}n + \phi } \right) - \frac{{2\pi
+					A}}{{{F_s}}}n\cos \left( {\frac{{4\pi f}}{{{F_s}}}n + 2\phi }
+			\right)} \right]}
+\end{align}
+Putting the value of $x[n]$ from (\ref{model}) in the above
+equation, we get
+\begin{align}
+	\begin{array}{l}
+		\frac{{{\partial ^2}\ln {p_{\bf{x}}}({\bf{x}};f)}}{{\partial {f^2}}} = \\
+		- \frac{{2\pi A}}{{{\sigma ^2}{F_s}}}\sum\limits_{n = 0}^{N - 1} {n\left[ {\frac{{2\pi }}{{{F_s}}}n\left\{ {A{{\cos }^2}\left( {\frac{{2\pi f}}{{{F_s}}}n + \phi } \right) + w[n]cos\left( {\frac{{2\pi f}}{{{F_s}}}n + \phi } \right)} \right\} - \frac{{2\pi A}}{{{F_s}}}n\cos \left( {\frac{{4\pi f}}{{{F_s}}}n + 2\phi } \right)} \right]}
+	\end{array}
+\end{align}
+Taking negative expectation on both sides we get
+
+\begin{align}
+	\label{expectation} - \mathcal E\frac{{{\partial ^2}\ln
+			{p_{\bf{x}}}({\bf{x}};f)}}{{\partial {f^2}}} = \frac{{2\pi
+			A}}{{{\sigma ^2}{F_s}}} \mathcal E\sum\limits_{n = 0}^{N - 1} {n\left[
+		{\frac{{2\pi }}{{{F_s}}}nA{{\cos }^2}\left( {\frac{{2\pi
+						f}}{{{F_s}}}n + \phi } \right)} \right]}
+\end{align}
+It is to be noted that \[\sum\limits_{n = 0}^{N - 1} {n \mathcal E\left[
+	{w[n]cos\left( {\frac{{2\pi f}}{{{F_s}}}n + \phi } \right)}
+	\right]}  \approx 0\] as $w[n]$ and $\phi$ are independent,
+
+\[\sum\limits_{n = 0}^{N - 1} {{n^2}\mathcal E\left[ {\cos \left( {\frac{{4\pi f}}{{{F_s}}}n + 2\phi } \right)} \right]}  \approx 0\] and \[\sum\limits_{n = 0}^{N - 1} {{n^2} \mathcal E\left[ {{{\cos }^2}\left( {\frac{{2\pi f}}{{{F_s}}}n + \phi } \right)} \right]}  = \sum\limits_{n = 0}^{N - 1} {\frac{{{n^2}}}{2}} \]
+Therefore from (\ref{expectation}) we have
+\begin{align*}
+	- \mathcal E\frac{{{\partial ^2}\ln
+			{P_{\mathbf{x}}}({\mathbf{x}};f)}}{{\partial {f^2}}} =
+	\frac{{4{\pi ^2}{A^2}}}{{{\sigma ^2}F_s^2}}\sum\limits_{n = 0}^{N
+		- 1} {{n^2} \mathcal E\left[ {{{\cos }^2}\left( {\frac{{2\pi f}}{{{F_s}}}n +
+				\phi } \right)} \right]}
+\end{align*}
+
+\begin{align}
+	\label{crbEq} = \frac{{4{\pi ^2}{A^2}}}{{{\sigma
+				^2}F_s^2}}\sum\limits_{n = 0}^{N - 1} {\frac{{{n^2}}}{2}}  =
+	\frac{{2{\pi ^2}{A^2}}}{{{\sigma ^2}F_s^2}}\sum\limits_{n = 0}^{N
+		- 1} {{n^2}}  = \frac{{2{\pi ^2}{A^2}}}{{{\sigma
+				^2}F_s^2}}\frac{{N(N - 1)(2N - 1)}}{6}
+\end{align}
+
+The CRB is found by
+\[{\mathop{\rm var}} (f) \ge \frac{1}{{ - E\left\{ {\frac{{{\partial ^2}\ln {P_{\mathbf{x}}}({\mathbf{x}};f)}}{{\partial {f^2}}}} \right\}}}\]
+Hence using the above identity in (\ref{crbEq}) gives
+
+\begin{align}
+	{\mathop{\rm var}} (f) \ge \frac{{3{\sigma ^2}F_s^2}}{{{\pi
+				^2}{A^2}N(N - 1)(2N - 1)}}
+\end{align}

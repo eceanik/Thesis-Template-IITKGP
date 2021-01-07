@@ -1,0 +1,92 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: ThesisTemplateIITKGP.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: HeadTail/coverpage.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: HeadTail/title.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: HeadTail/Approvalcert.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: HeadTail/cert.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: HeadTail/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: HeadTail/dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: HeadTail/ack.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: HeadTail/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Symbol/abbreviation.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Symbol/listofsymbol.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: Chapter_intro/chapterHead.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: Chapter_Conclusions/chapterHead.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Appendix/ExptSetup.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Appendix/Jacobian.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: HeadTail/publication.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: HeadTail/biodata.aux
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: RefFile1.bib
+Database file #2: RefFile2.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 2 entries,
+            4039 wiz_defined-function locations,
+            842 strings with 8070 characters,
+and the built_in function-call counts, 1618 in all, are:
+= -- 133
+> -- 40
+< -- 10
++ -- 20
+- -- 8
+* -- 89
+:= -- 257
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 18
+cite$ -- 2
+duplicate$ -- 118
+empty$ -- 111
+format.name$ -- 10
+if$ -- 354
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 20
+newline$ -- 29
+num.names$ -- 2
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 124
+stack$ -- 0
+substring$ -- 56
+swap$ -- 96
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 2
+warning$ -- 0
+while$ -- 7
+width$ -- 3
+write$ -- 42

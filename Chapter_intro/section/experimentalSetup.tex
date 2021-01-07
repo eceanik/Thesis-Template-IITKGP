@@ -1,0 +1,68 @@
+\section{Experimental Setup}
+\label{experimentalSetup}
+A schematic diagram of the experimental setup is illustrated in Fig. \ref{Fig:labSetupSchematic}. The experimental setup consists of a 22 kW, four-pole, and three-phase SCIM manufactured by ABB. Power to the motor was supplied with VFD from ABB (model: ACS550-U1-045A-4). We have used multiple sensors to record different signals of the motor, as shown in Fig. \ref{Fig:labSetupSchematic}. Complete specifications of the experimental setup are provided in Appendix \ref{Appendix:AowMotorSpec}. A three-phase tacho-generator was coupled to a generator for speed estimation. A photograph of the motor-generator setup is shown in Fig.~\ref{Fig:labSetup}. Variable loading was achieved through rheostatic loads, with a 24-kW separately excited DC generator coupled to the motor shown in Fig.~\ref{Fig:labSetup}.
+%
+\begin{figure}[h] \centering
+	{\includegraphics[width=120mm]{Chapter_intro/figs/labSetupScheme.eps}} \caption{The schematic diagram of the motor-generator experimental setup} 
+	\label{Fig:labSetupSchematic}
+\end{figure}
+%
+\begin{figure}[h] \centering
+	{\includegraphics[width=120mm]{Chapter_intro/figs/labSetup.eps}} \caption{A photograph of the motor-generator experimental setup} \label{Fig:labSetup}
+\end{figure}
+
+\subsection{Signal Acquisition}
+\begin{figure}[h] \centering
+	{\includegraphics[width=100mm]{Chapter_intro/figs/sensors.eps}} 
+	\caption{The different sensors used for signal acquisition. Clockwise from top (A) current sensor, (B) voltage sensor, (C) acoustic sensor, (D) vibration sensor.} \label{Fig:sensors}
+\end{figure} 
+A 16-channel Yokogawa 850v data acquisition system simultaneously recorded multiple signals with a sampling frequency of 20 kHz. The inbuilt analog low-pass filter of the data acquisition system was configured with a 4-kHz cutoff to avoid aliasing. For the SCIM, we have recorded two phases of the stator current and three phase-voltages. For acquiring the stator current, we have used Fluke i1000 clamp-type current transducer. The phase voltages were tapped using Fluke voltage probes. We have illustrated only one-phase voltage acquisition in Fig. \ref{Fig:labSetupSchematic} for clarity. We have recorded the vibration of the SCIM using two tri-axial vibration sensors (Brüel \& Kjær, model: 4506). One sensor was mounted on the driving end, while the other was mounted in the middle of the motor. Data only from the driving-end sensor’s radially oriented axis has been used in this thesis for uniformity. The motor's rotational speed was measured using a proximity-based sensor mounted atop the coupling, as shown in Fig. \ref{Fig:labSetup}. We have also recorded the acoustic emission using (Brüel \& Kjær, model: 2579661) unidirectional microphone. The photograph of the sensors used in the experimental setup is shown in Fig.~\ref{Fig:sensors}. The offline analysis was carried out with MATLAB. The specification of the computational platform is given in Appendix~\ref{Appendix:offlineSystem}. Other than the SCIM signatures, we have recorded load current and armature voltage of the DC generator and two phase-voltage of the three-phase tacho-generator. 
+
+\subsection{Incorporation of Faults}
+\begin{table}
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Description of different BRB faults used for the experiments} 
+	\label{designOfExpt} \centering
+	\begin{tabular}{m{2.7cm}|m{2.5cm}m{2.4cm}m{2.1cm}m{2.1cm}}
+		\hline \hline
+		Fault & healthy BRB & partial BRB & half BRB & full BRB\\
+		\hline
+		Drill Depth & 0 mm & 4 mm & 16 mm & 34 mm\\
+		\hline
+	\end{tabular}
+	%\footnotemark{}
+\end{table}
+%
+\begin{figure}[h]
+\centering \mbox{ \subfloat[{\scriptsize Half BRB
+fault}]{\includegraphics[width=50mm]{Chapter_intro/figs/expHalfBrb.eps}} 
+\qquad
+\subfloat[{\scriptsize Full BRB
+fault}]{\includegraphics[width=50mm]{Chapter_intro/figs/expFullBrb.eps}}}
+\caption{Photograph of different levels of BRB fault}
+\label{expBRB}
+\end{figure}
+For simulating BRB, a single rotor was damaged at different depth-levels, as given in Table \ref{designOfExpt} and shown in Fig. \ref{expBRB} for the experiment. For damaging the bearing, single 2-mm holes, as shown in Fig.~\ref{fig:simFault}, were machined into the outer raceway, the inner raceway, and the rolling element of the driving-end bearing using spark electric discharge machining. Figure \ref{Fig:copperTipEdm} shows the machining process and one of the copper electrodes that was used for machining the holes in different parts of the bearing.
+%
+\begin{figure}[h] \centering
+	{\includegraphics[width=80mm]{Chapter_intro/figs/faults.eps}}
+	\caption{Different kind of bearing faults (A) Inner raceway fault, (B) Rolling element and cage fault, (C) Outer race fault.} \label{fig:simFault}
+\end{figure}
+\begin{figure}[h] \centering
+	{\includegraphics[width=80mm]{Chapter_intro/figs/edm_tip.eps}}
+	\caption{Electrical discharge machining underway for creating outer raceway fault and one of the sample copper electrodes used.}
+	\label{Fig:copperTipEdm}
+\end{figure}
+Additionally, we have used the CWRU dataset \cite{caseWestern} for validating the vibration-based algorithm for bearing fault detection. The specification of the bearing used in the CWRU dataset is given in Appendix \ref{Appendix:CwBearingSpec}. Characteristic primary fault frequencies in terms of $f_r$ for both the tested bearings are given in Table~\ref{Tab:bearingFault}.
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Bearing  vibration fault frequencies (multiple of $f_r$ in Hz)} \label{Tab:bearingFault} \centering
+	\begin{tabular}{m{4.5cm}|m{1.5cm}m{1.5cm}m{1.5cm}m{1.5cm}}
+		\hline \hline
+		Bearing & Outer & Inner & Rolling & Cage\\
+		\hline
+		SKF 6310-2ZR (Lab) & 3.0476 & 4.9524 & 3.9619 & 0.3810\\
+		SKF 6205-2RS (CWRU)& 3.5848 & 5.4152 & 4.7134 & 0.3938\\
+		\hline
+	\end{tabular}
+\end{table}

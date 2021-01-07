@@ -1,0 +1,47 @@
+%\newgeometry{top=2cm}
+\chapter*{Abstract} \vspace{-5mm}
+This thesis represents the research work to detect low-amplitude
+stationary and non-stationary signals and its application to the
+diagnosis of weak faults in Squirrel Cage Induction Motors (SCIM).
+SCIM incipient faults include Broken Rotor Bar (BRB), eccentricity
+faults, bearing defects, and inter-turn short circuit fault. If
+the incipient faults are not detected at an early state, and
+proper maintenance is not carried out, then it may result in
+complete failure of the motor and loss of production.
+
+In this research, SCIM faults are detected by identifying fault
+specific frequency components in the motor armature current and
+motor vibration signal spectrum. First, a Multiple Signal
+Classifier (MUSIC) based method has been developed to detect the
+SCIM faults under low loads using a single phase current signal at
+steady state. The size of the autocorrelation matrix for MUSIC has
+been estimated from the derived analytic relations between the
+matrix size and the required frequency resolution. Under some
+applications, the loading of the motor changes with time and
+during that transient period, the steady-state fault diagnosis
+methods may fail. Therefore, another method is developed to detect
+SCIM faults during the time-varying and fixed loading conditions.
+However, the loading of the motor needs to be higher compared to
+the steady-state based method to detect the faults. In some
+applications, the primary requirement is to develop a low-cost
+online system for continuous condition monitoring. Therefore, a
+fault detection algorithm with low computational complexity has
+been developed which uses only a single current sensor. The low
+complexity method can detect faults during the steady state of the
+motor operations but needs higher loading compared to the first
+proposed method. Sometimes it may be required to quickly assess
+the motor health without any dedicated sensor or processing unit.
+For such requirements, an Android application has been developed
+which will convert any Android mobile phone with inbuilt
+accelerometer into a SCIM fault diagnosis tool. The proposed four
+algorithms have been tested using data from a laboratory setup of
+22kW SCIM loaded by a 24kW DC generator.
+
+\textbf{Keywords}: Induction motor, fault diagnosis, Extended
+Kalman Filter, Frequency Estimation, MUSIC, Blackman-Tukey
+algorithm, broken rotor bar, inner raceway fault, outer raceway
+fault, rolling element fault, static eccentricity, dynamic
+eccentricity, mixed eccentricity, multi-coset sampling, Android
+programming.
+
+%\restoregeometry

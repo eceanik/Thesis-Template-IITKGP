@@ -1,0 +1,26 @@
+\chapter{Appendix A}{Algorithms}
+\label{app:roc_ss} To test the performance of the proposed method
+in Chapter~\ref{chap:ss_fault_detection}, current data has been
+simulated from the healthy and faulty model (BRB) developed in
+Chapter~\ref{chap:fault_model} at a fixed loading (56\%). Then,
+different level of noise has been added to the simulated current
+data. For each noise level, 100 test runs were performed for
+healthy and faulty cases each by randomly generating the noise
+values. The maximum ECDF magnitudes estimated from the proposed
+methodology has been used to generate the ROC curve in MATLAB
+(perfcurve function) Fig.~\ref{fig:roc_ss}. With the increase of
+SNR value, the detectability improves as the Area Under the Curve
+(AUC) increases.
+\begin{figure}[H]
+\centering
+{\includegraphics[width=120mm]{Appendix/figs/eps/roc_ss.eps}}
+\caption{Receiver operating characteristic curve for BRB fault at
+different SNR} \label{fig:roc_ss}
+\end{figure}
+SNR has been evaluated as
+\begin{align}
+SNR = 10{\log _{10}}\left( {\frac{{{P_f}}}{{{P_n}}}} \right).
+\label{eqn:snr_ss}
+\end{align}
+where $P_f$ and $P_n$ are the power of the left BRB fault
+frequency and the noise power respectively.

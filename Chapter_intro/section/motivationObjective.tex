@@ -1,0 +1,24 @@
+\section{Motivations of the Thesis}
+The adaptation of deep learning (DL) architectures and drive towards an industrial internet of things have ramped-up the year-wise publication in this domain, as observed in Fig. \ref{fig:yearwise}. However, physics-based models with the capacity to detect the weak-fault signatures can circumvent the infeasibility of obtaining faulty-motor data from a running plant. 
+\begin{figure}[h] \centering
+	{\includegraphics[width=100mm]{Chapter_intro/figs/yearwise.eps}} \caption{Year-wise distribution of published works} \label{fig:yearwise}
+\end{figure}
+Some of the existing problems that motivate us for this thesis are as follows:
+\begin{enumerate}
+	\renewcommand{\theenumi}{\roman{enumi}}
+	\item Detecting multiple faults requires removing multiple dominant components dependent on the rotational frequency. Conventional notch filters are not viable for variable frequency, and very-low slip applications as the filters can suppress the closely-spaced fault components. As evident from the literature, the other methods are mainly useful for removing single components or components with harmonic ordering.
+	\item Spectral estimators are computationally complex, and the available high-resolution spectral estimators are incapable of estimating the constituent components' amplitude.
+	\item Industries don’t tolerate faults, and periodic maintenance is enforced to avoid stoppages. As a result, fault data is not available for training. It is still an open problem for data-driven architectures to train with only available healthy-motor data. 
+	\item The scarcity of public datasets for SCIM-fault data under different conditions is a significant barrier for the generalized implementation of DL-based methods. 
+	\item The detection algorithms mainly considers the presence or absence of faults. The GLRT-based methods mainly focus on improving accuracy under noisy conditions. However, it doesn’t assume the inherent fault component that can also be present in a healthy-motor.     
+\end{enumerate}
+\section{Objective and Contribution of the Thesis}
+This thesis aims to detect weak faults in plaguing different parts of squirrel cage induction motors. Fault diagnosis requires the detection and estimation of sinusoidal parameters under stationary as well as non-stationary conditions. The contribution of the thesis is summarized below:
+\begin{enumerate}
+	\renewcommand{\theenumi}{\roman{enumi}}
+	\item Instantaneous frequency estimation of multiple sinusoidal frequency components a linearized constrained Kalman filter-based method. The method was enhanced for eliminating the multiple dominant components, which leads to efficient signal conditioning. 
+	\item A Rayleigh-quotient-based spectral estimator is proposed, which has high estimation accuracy and is computationally efficient. It can also estimate the amplitude of the constituent frequency components efficiently. The spectral estimator has been used to detect various faults of the SCIM using both stator current and vibration as input.
+	\item We propose a minimum-distance-based detector that can incorporate the inherent fault component information for making the decision.
+	\item We also propose a Bayesian MAP-based sequential spectral estimator for detecting SCIM faults. We have used the spectral estimator to detect faults using the stator current. The spectral estimator's recursive nature has enabled its implementation into an IoT-based framework for detecting defects in multiple motors. 
+\end{enumerate}
+The proposed methods have been tested and validated on a 22-kW SCIM laboratory setup described in section \ref{experimentalSetup}. The use of vibration has also been validated using the publicly available Case Western Reserve University (CWRU) drive-end, 12 kHz bearing data \cite{caseWestern}.

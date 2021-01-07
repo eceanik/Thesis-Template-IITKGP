@@ -1,0 +1,49 @@
+\thispagestyle{empty}
+
+\begin{figure}[htbp]
+  \psfig{figure=IITLOGO.eps,height=2.1cm,width=1.8cm}
+\end{figure}
+
+\vspace*{-4.0\baselineskip}
+
+\hspace*{2cm} {\large{\bf{\sf Department of Electrical Engineering}}} \\
+\hspace*{2.6cm}   {\large{\bf{\sf Indian Institute of Technology, Kharagpur}}}\\
+\hspace*{2.6cm}   {\large{\sf Kharagpur, India 721302.}}\\
+\vspace*{0.5cm}
+\rule{\textwidth}{0.75pt}
+
+\vskip 2.0\baselineskip \centerline{\underline{\Large{\bf
+Certificate}}} \vskip 2.0\baselineskip \noindent This is to
+certify that this thesis entitled {\bf Detection of Weak faults in
+Squirrel Cage Induction Motors using Frequency Estimation
+Techniques} submitted by {\bf {Arunava Naha}}, to the Indian
+Institute of Technology Kharagpur, is a record of bona fide
+research work carried out under our supervision and is worthy of
+consideration for award of the degree of Doctor of Philosophy of
+the Institute.
+
+\begin{flushright}
+\raisebox{0.1cm}[3cm][0cm]{
+\begin{minipage}{7.8cm}
+{\bf Alok Kanti Deb }\\
+Department of Electrical Engineering \\
+Indian Institute of Technology, Kharagpur \\
+{\sf India} 721302.
+\end{minipage}
+}
+\end{flushright}
+\ \\
+I.I.T. Kharagpur\\
+date:
+%$~~~~~~$25$^{th}$ February, 2009
+
+\begin{flushright}
+\raisebox{0.4cm}[3cm][0cm]{
+\begin{minipage}{7.8cm}
+{\bf Aurobinda Routray}\\
+  Department of Electrical Engineering \\
+ Indian Institute of Technology, Kharagpur \\
+ {\sf India} 721302.\\
+\end{minipage}
+}
+\end{flushright}

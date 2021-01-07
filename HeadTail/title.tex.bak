@@ -1,0 +1,38 @@
+\thispagestyle{plain}
+\begin{center}
+\begin{spacing} {1.25}
+{\LARGE \bf Detection of Weak faults in Squirrel Cage Induction
+Motors using Frequency Estimation Techniques}
+\end{spacing}
+
+\vspace*{2.0cm} {\em Thesis submitted to\\ Indian Institute of
+Technology, Kharagpur \\ for the award of the degree}\\
+\vspace*{0.5cm} {\em of} \\
+\vspace*{0.5cm}
+{\Large {\bf Doctor\ \ of\ \ Philosophy}}\\
+
+\vspace*{0.5cm}
+{\em by}\\
+\vspace*{0.5cm}
+{\Large{\bf Arunava Naha}}\\
+
+\vspace*{1cm}
+{\em under the guidance of }\\
+\vspace*{0.3cm}
+{\bf Prof. Alok Kanti Deb}\\
+\vspace*{0.3cm}
+{\bf Prof. Aurobinda Routray}\\
+
+%\vspace*{1.0cm}
+
+
+
+\begin{figure}[htbp]
+%  \centerline{\includegraphics{figure=iitlogo.pdf,height=4cm,width=3.5cm}}
+  \centerline{\psfig{figure=IITLOGO.eps,height=4cm,width=3.5cm}}
+\end{figure}
+{{\bf DEPARTMENT OF ELECTRICAL ENGINEERING\\
+INDIAN INSTITUTE OF TECHNOLOGY, KHARAGPUR\\
+October 2018}} \\
+\copyright 2018, Arunava Naha. All rights reserved.
+\end{center}

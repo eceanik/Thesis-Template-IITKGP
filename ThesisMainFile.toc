@@ -4,11 +4,11 @@
 \contentsline {chapter}{Declaration}{vii}{section*.10}%
 \contentsline {chapter}{Acknowledgement}{xi}{section*.11}%
 \contentsline {chapter}{Abstract}{xiii}{section*.13}%
-\contentsline {chapter}{Table of Contents}{xvi}{chapter*.14}%
-\contentsline {chapter}{List of Figures}{xvii}{section*.15}%
-\contentsline {chapter}{List of Tables}{xix}{section*.16}%
-\contentsline {chapter}{List of Abbreviations}{xxi}{section*.17}%
-\contentsline {chapter}{List of Symbols}{xxiii}{section*.19}%
+\contentsline {chapter}{Table of Contents}{xvi}{section*.15}%
+\contentsline {chapter}{List of Figures}{xvii}{section*.16}%
+\contentsline {chapter}{List of Tables}{xix}{section*.17}%
+\contentsline {chapter}{List of Abbreviations}{xxi}{section*.18}%
+\contentsline {chapter}{List of Symbols}{xxiii}{section*.20}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Background}{1}{section.1.2}%
@@ -18,14 +18,14 @@
 \contentsline {section}{\numberline {1.6}Thesis Organization}{3}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Conclusions}{3}{section.1.7}%
 \contentsline {chapter}{\numberline {2}Conclusions from the Thesis and Future Research Directions}{5}{chapter.2}%
-\contentsline {chapter}{Appendices}{7}{section*.23}%
+\contentsline {chapter}{Appendices}{7}{section*.24}%
 \contentsline {chapter}{\numberline {A}Appendix 1}{9}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}Appendix Section 1}{9}{section.1.A.1}%
 \contentsline {section}{\numberline {A.2}Appendix Section 2}{9}{section.1.A.2}%
 \contentsline {chapter}{\numberline {B}Appendix-2 Title}{11}{appendix.1.B}%
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{Bibliography}{13}{section*.24}%
-\contentsline {section}{References}{13}{appendix*.25}%
+\contentsline {chapter}{Bibliography}{13}{section*.25}%
+\contentsline {section}{References}{13}{appendix*.26}%
 \setcounter {tocdepth}{2}
-\contentsline {chapter}{Publications}{15}{section*.26}%
-\contentsline {chapter}{Author Biography}{17}{section*.30}%
+\contentsline {chapter}{Publications}{15}{section*.27}%
+\contentsline {chapter}{Author Biography}{17}{section*.31}%
